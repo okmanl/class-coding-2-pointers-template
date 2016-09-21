@@ -16,17 +16,23 @@ namespace example1 {
 
 
         //TODO 1
+        int var1;
+        char var2[10];
         cout << "Size of var1 variable: ";
-
+        
         //TODO 1
+        cout << sizeof(var1) << endl;
         cout << "Size of var2 variable: ";
+        cout << sizeof(var2) << endl;
+
 
         //TODO 1
         cout << "Address of var1 variable: ";
+        cout << &var1 <<endl;
 
         //TODO 1
         cout << "Address of var2 variable: ";
-
+        cout <<&var2 <<endl;
     }
 }
 
@@ -301,7 +307,7 @@ namespace example13 {
 
 int main() {
 
-    //example1::example();
+    example1::example();
     //example2::example();
     //example3::example();
     //example4::example();
