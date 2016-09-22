@@ -73,13 +73,11 @@ namespace example3 {
 
         // let us have array address in pointer.
         ptr = array;
-        //int var1;
 
 
         //TODO 3 - point pointer to variable
         for (int i = 0; i < MAX; i++){
             //TODO 3
-            //var1 = *ptr;
             cout << "Address of var[" << i << "] = " << &array[i] << endl;
             //TODO 3
             cout << "Value of var[" << i << "] = " << array[i] << endl;
