@@ -66,24 +66,25 @@ namespace example3 {
 
         //TODO 3 - integer array of size MAX
         //TODO 3 - integer pointer
-        const int MAX = 10;
-        int var1[MAX];
-        int *var2;
+        //const int MAX = 10;
+        int array[MAX];
+        int *ptr;
 
 
         // let us have array address in pointer.
+        ptr = array;
+        //int var1;
+
 
         //TODO 3 - point pointer to variable
         for (int i = 0; i < MAX; i++){
             //TODO 3
-            //&var2;
-            cout << "Address of var[" << i << "] = ";
-
+            //var1 = *ptr;
+            cout << "Address of var[" << i << "] = " << &array[i] << endl;
             //TODO 3
-            cout << "Value of var[" << i << "] = ";
-
+            cout << "Value of var[" << i << "] = " << array[i] << endl;
             //TODO 3// point to the next location
-          
+            ptr++;
         }
     }
 }
