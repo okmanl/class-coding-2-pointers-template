@@ -1,4 +1,4 @@
-/**
+/** do problem 8
  * POINTERS TUTORIAL
  * CREDIT: tutorials point c++ pointer tutorials
  * http://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
@@ -164,13 +164,15 @@ namespace example8 {
         //array of pointers
         int var[MAX] = {10, 100, 200};
         //TODO 8 define an integer pointer of size MAX
-
+        int *ptr[MAX];
         for (int i = 0; i < MAX; i++) {
             //TODO 8// assign the address of integer.
+            ptr[i] = &var[i];
         }
         for (int i = 0; i < MAX; i++) {
             //TODO 8
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = " << var[i] << endl;
+            cout << "value of address of var[" << i << "] = " << ptr[i] << endl;
         }
     }
 }
@@ -305,14 +307,14 @@ namespace example13 {
 
 int main() {
 
-    example1::example();
-    example2::example();
+    //example1::example();
+    //example2::example();
     //example3::example();
     //example4::example();
     //example5::example();
     //example6::example();
     //example7::example();
-    //example8::example();
+    example8::example();
     //example9::example();
     //example10::example();
     //example11::example();
