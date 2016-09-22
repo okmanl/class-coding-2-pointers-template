@@ -54,7 +54,7 @@ namespace example2 {
 //TODO 2
         cout << "Address of *ip variable: " << &*ptr << endl;
 //TODO 2 - set the pointer to null pointer
-        *ptr = NULL;
+        ptr = NULL;
         cout << "The value of ptr is " << ptr;
 
     }
@@ -66,7 +66,7 @@ namespace example3 {
 
         //TODO 3 - integer array of size MAX
         //TODO 3 - integer pointer
-        const int MAX = 10;
+
         int var1[MAX];
         int *var2;
 
@@ -94,19 +94,21 @@ namespace example4 {
         //pointer subtraction
 
         //TODO 4 - integer array of size MAX
+        int array[MAX];
         //TODO 4 - integer pointer
-
+        int *ptr;
         //TODO 4// let us have address of the last element in pointer.
-
+        ptr = &array[MAX-1];
         for (int i = MAX; i > 0; i--) {
             //TODO 4
-            cout << "Address of var[" << i << "] = ";
+            cout << "Address of var[" << i << "] = " << ptr << "\n";
 
             //TODO 4
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = " << *ptr << "\n";
 
             //TODO 4
             // point to the previous location
+            ptr--;
         }
     }
 }
@@ -117,18 +119,23 @@ namespace example5 {
         //comparing pointers
 
         //TODO 5 - integer array of size MAX
+        int array[MAX];
+
         //TODO 5 - integer pointer
+        int *ptr;
 
         //TODO 5// let us have address of the first element in pointer.
+        ptr = array;
         int i = 0;
+
         //TODO 5 iterate from &variable[MAX-1] to ptr
-        while (42) {
+        while (i < MAX) {
 
             //TODO 5
-            cout << "Address of var[" << i << "] = ";
+            cout << "Address of var[" << i << "] = " << &array[MAX-1] << "\n";
 
             //TODO 5
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = " << array[MAX-1] << "\n";
 
             //TODO 5// point to the next location
 
@@ -323,13 +330,8 @@ int main() {
     //example5::example();
     //example6::example();
     //example7::example();
-<<<<<<< HEAD
     //example8::example();
-    example9::example();
-=======
-    example8::example();
     //example9::example();
->>>>>>> origin/master
     //example10::example();
     //example11::example();
     //example12::example();
