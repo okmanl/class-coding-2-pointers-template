@@ -1,4 +1,4 @@
-/**
+/** do problem 8 test
  * POINTERS TUTORIAL
  * CREDIT: tutorials point c++ pointer tutorials
  * http://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
@@ -19,7 +19,7 @@ namespace example1 {
         int var1;
         char var2[10];
         cout << "Size of var1 variable: ";
-
+        
         //TODO 1
         cout << sizeof(var1) << endl;
         cout << "Size of var2 variable: ";
@@ -38,27 +38,25 @@ namespace example1 {
 
 namespace example2 {
     void example() {
-        //pointers basic 2
-        //TODO 2 - create a integer variable var holding some value
-        //TODO 2 - create a pointer of type int
+//pointers basic 2
+//TODO 2 - create a integer variable var holding some value
+        int var = 32;
+//TODO 2 - create a pointer of type int
+        int *ptr;
+//TODO 2 - store address of var into pointer
+        ptr = &var;
+//TODO 2
+        cout << "Value of var variable: " << var << endl;
+//TODO 2 // print the address stored in ip pointer variable
+        cout << "Address stored in ip variable: " << ptr << endl;
+//TODO 2// access the value at the address available in pointer
+        cout << "Value of *ip variable: " << *ptr << endl;
+//TODO 2
+        cout << "Address of *ip variable: " << &*ptr << endl;
+//TODO 2 - set the pointer to null pointer
+        *ptr = NULL;
+        cout << "The value of ptr is " << ptr;
 
-        //TODO 2 - store address of var into pointer
-
-        //TODO 2
-        cout << "Value of var variable: ";
-
-        //TODO 2 // print the address stored in ip pointer variable
-        cout << "Address stored in ip variable: ";
-
-        //TODO 2// access the value at the address available in pointer
-        cout << "Value of *ip variable: ";
-
-        //TODO 2
-        cout << "Address of *ip variable: ";
-
-        //TODO 2 - set the pointer to null pointer
-
-        cout << "The value of ptr is ";
     }
 }
 
@@ -166,13 +164,15 @@ namespace example8 {
         //array of pointers
         int var[MAX] = {10, 100, 200};
         //TODO 8 define an integer pointer of size MAX
-
+        int *ptr[MAX];
         for (int i = 0; i < MAX; i++) {
             //TODO 8// assign the address of integer.
+            ptr[i] = &var[i];
         }
         for (int i = 0; i < MAX; i++) {
             //TODO 8
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = " << var[i] << endl;
+            cout << "value of address of var[" << i << "] = " << ptr[i] << endl;
         }
     }
 }
@@ -183,11 +183,10 @@ namespace example9 {
         //array of names
 
         //TODO 9 - create a character pointer array of size MAX
-        char *names[MAX];
+
         for (int i = 0; i < MAX; i++) {
             //TODO 9
             cout << "Value of names[" << i << "] = ";
-            cout << names[i] << endl;
 
         }
     }
@@ -315,8 +314,8 @@ int main() {
     //example5::example();
     //example6::example();
     //example7::example();
-    //example8::example();
-    example9::example();
+    example8::example();
+    //example9::example();
     //example10::example();
     //example11::example();
     //example12::example();
