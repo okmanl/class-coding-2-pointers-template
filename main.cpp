@@ -181,6 +181,7 @@ namespace example9 {
     void example() {
 
         //array of names
+
         //TODO 9 - create a character pointer array of size MAX
 
         for (int i = 0; i < MAX; i++) {
