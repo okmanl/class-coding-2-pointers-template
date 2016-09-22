@@ -1,4 +1,4 @@
-/** do problem 8
+/** do problem 8 test
  * POINTERS TUTORIAL
  * CREDIT: tutorials point c++ pointer tutorials
  * http://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
