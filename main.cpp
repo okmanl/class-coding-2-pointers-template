@@ -19,7 +19,7 @@ namespace example1 {
         int var1;
         char var2[10];
         cout << "Size of var1 variable: ";
-        
+
         //TODO 1
         cout << sizeof(var1) << endl;
         cout << "Size of var2 variable: ";
@@ -183,10 +183,11 @@ namespace example9 {
         //array of names
 
         //TODO 9 - create a character pointer array of size MAX
-
+        char *names[MAX];
         for (int i = 0; i < MAX; i++) {
             //TODO 9
             cout << "Value of names[" << i << "] = ";
+            cout << names[i] << endl;
 
         }
     }
@@ -314,8 +315,13 @@ int main() {
     //example5::example();
     //example6::example();
     //example7::example();
+<<<<<<< HEAD
+    //example8::example();
+    example9::example();
+=======
     example8::example();
     //example9::example();
+>>>>>>> origin/master
     //example10::example();
     //example11::example();
     //example12::example();
