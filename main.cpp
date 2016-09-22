@@ -62,18 +62,24 @@ namespace example3 {
 
         //TODO 3 - integer array of size MAX
         //TODO 3 - integer pointer
+        const int MAX = 10;
+        int var1[MAX];
+        int *var2;
+
 
         // let us have array address in pointer.
 
         //TODO 3 - point pointer to variable
-        for (int i = 0; i < MAX; i++) {
+        for (int i = 0; i < MAX; i++){
             //TODO 3
+            //&var2;
             cout << "Address of var[" << i << "] = ";
 
             //TODO 3
             cout << "Value of var[" << i << "] = ";
 
             //TODO 3// point to the next location
+          
         }
     }
 }
@@ -191,7 +197,7 @@ namespace example10 {
         int var;
         int *ptr;
         //TODO 10 - create a pointer to pointer
-
+        int **ptr1;
 
         var = 3000;
 
@@ -199,13 +205,15 @@ namespace example10 {
         ptr = &var;
 
         //TODO 10// take the address of ptr using address of operator &
+        ptr1 = &ptr;
+
 
         // take the value using pptr
         cout << "Value of var :" << var << endl;
         cout << "Value available at *ptr :" << *ptr << endl;
         //TODO 10
         cout << "Value available at **pptr :";
-
+        cout << **ptr1 << endl;
     }
 }
 
